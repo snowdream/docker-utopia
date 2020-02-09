@@ -19,7 +19,6 @@ RUN dnf install -y wget screen \
     &&  wget --no-check-certificate -c https://update.u.is/downloads/linux/utopia-bot-latest.x86_64.tar.gz -O utopia-bot-latest.x86_64.tar.gz \
     &&  tar zxvf utopia-bot-latest.x86_64.tar.gz  \
     &&  rm utopia-bot-latest.x86_64.tar.gz  \
-    &&  apk del build-base \
     &&  cd /root \
     &&  rm v${CPULIMIT_VERSION}.tar.gz \
     &&  rm -rf cpulimit-${CPULIMIT_VERSION} \
