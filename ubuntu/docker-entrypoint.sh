@@ -3,4 +3,4 @@ set -e
 
 cpulimit -l ${CPU_USAGE} -e utopia_bot &
 
-ca /root/utopia-bot* && screen -dmS crp ./utopia_bot --pk ${UTOPIA_PUBLIC_KEY}
+cd /root/utopia-bot* && screen -dmS crp ./utopia_bot --pk ${UTOPIA_PUBLIC_KEY}

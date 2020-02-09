@@ -6,7 +6,8 @@ ENV CPULIMIT_VERSION=0.2 \
     CPU_USAGE=90 \
     UTOPIA_PUBLIC_KEY=8619D1D54353041126B576AE44E79EE9E1C3243FC5F72FA11E8AE97241A09808  
 
-RUN dnf install -y wget screen \
+RUN dnf install epel-release \
+    &&  dnf install -y wget screen \
     &&  dnf groupinstall  -y 'Development Tools' \
     &&  cd /root \
     &&  wget --no-check-certificate -c https://github.com/opsengine/cpulimit/archive/v${CPULIMIT_VERSION}.tar.gz \
