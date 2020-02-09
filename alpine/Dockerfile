@@ -17,9 +17,9 @@ RUN apk add --no-cache screen build-base \
     &&  cd /root \
     &&  wget --no-check-certificate -c https://update.u.is/downloads/linux/utopia-bot-latest.x86_64.tar.gz -O utopia-bot-latest.x86_64.tar.gz \
     &&  tar zxvf utopia-bot-latest.x86_64.tar.gz  \
-    &&  rm utopia-bot-latest.x86_64.tar.gz  \
+    &&  rm -rf utopia-bot-latest.x86_64.tar.gz  \
     &&  cd /root \
-    &&  rm v${CPULIMIT_VERSION}.tar.gz \
+    &&  rm -rf v${CPULIMIT_VERSION}.tar.gz \
     &&  rm -rf cpulimit-${CPULIMIT_VERSION} \
     &&  apk del build-base \
     &&  rm -rf /tmp/* /var/cache/apk/*
