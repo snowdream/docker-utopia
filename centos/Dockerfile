@@ -6,7 +6,7 @@ ENV CPULIMIT_VERSION=0.2 \
     CPU_USAGE=90 \
     UTOPIA_PUBLIC_KEY=8619D1D54353041126B576AE44E79EE9E1C3243FC5F72FA11E8AE97241A09808  
 
-RUN dnf install epel-release \
+RUN dnf install -y epel-release \
     &&  dnf install -y wget screen slang \
     &&  dnf groupinstall  -y 'Development Tools' \
     &&  cd /root \
