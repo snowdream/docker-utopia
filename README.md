@@ -27,6 +27,20 @@ The cpu usage is limited to 90% by default. If you want to change it,pass it wit
 docker run --restart=always --network host -d -e UTOPIA_PUBLIC_KEY=8619D1D54353041126B576AE44E79EE9E1C3243FC5F72FA11E8AE97241A09808 -e CPU_USAGE=100 --name utopia snowdream/utopia
 ```
 
+## View
+
+```bash
+docker exec -ti utopia /bin/bash
+screen -r
+```
+
+or
+
+```bash
+docker exec -ti utopia /bin/bash
+screen -x crp
+```
+
 <!-- ## Donate
 
 My utopia Wallet Address:
