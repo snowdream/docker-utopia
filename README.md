@@ -13,6 +13,9 @@ The minimum hardware requirements: 4 CPU cores and 4096 MB of RAM.
 ```bash
 curl -fsSL https://get.docker.com -o get-docker.sh
 sh get-docker.sh
+
+systemctl start docker 
+systemctl enable docker
 ```
 
 ## Usage
