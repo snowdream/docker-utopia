@@ -6,7 +6,7 @@ docker images for utopia
 
 ## Requirements
 
-The minimum hardware requirements: 4 CPU cores and 4096 MB of RAM.
+The minimum hardware requirements: 4 CPU cores and larger than 4096 MB of RAM.
 
 ## Install Docker
 
