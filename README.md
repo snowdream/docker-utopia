@@ -44,6 +44,12 @@ docker exec -ti utopia /bin/bash
 screen -x crp
 ```
 
+Exit screen, but not exit the application:
+1. type ctrl + a
+2. type d
+
+Do not type ctrl + c, It will exit the application.
+
 <!-- ## Donate
 
 My utopia Wallet Address:
